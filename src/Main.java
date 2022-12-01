@@ -1,6 +1,6 @@
 import java.util.Hashtable;
 import java.util.Scanner;
-public class Main {
+public class Main implements Boat{
     static String river =  ConsoleColors.BLUE_BOLD_BRIGHT + "_______" + ConsoleColors.RESET ;//+ ConsoleColors.BLUE_BACKGROUND  +
     static String boat = ConsoleColors.YELLOW_BOLD_BRIGHT + "<__>"  + ConsoleColors.RESET;
     static String message = ConsoleColors.RED + ConsoleColors.BLACK_BACKGROUND + "Don't Leave More cannibals on each side than missionaries or you will lose" + ConsoleColors.RESET;;
@@ -32,7 +32,7 @@ public class Main {
         left = !left;
         right=!right;
     }
-    private static void transportCharacter(String name) {
+     public static void transportCharacter(String name) {
         int i=Integer.parseInt(name);
         if(i>5){
             transportMissionary(name);

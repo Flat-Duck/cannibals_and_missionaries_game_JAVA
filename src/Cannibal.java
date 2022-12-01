@@ -1,29 +1,9 @@
-public class Cannibal
+public class Cannibal extends Character
 {
-    String name,tag ;
 
-    public Cannibal() {}
-
-    public Cannibal(String name, String tag) {
-        this.name = name;
+    public Cannibal( String name,String tag) {
+        super();
         this.tag = tag;
+        this.name =name;
     }
-
-
-    public String getName() {
-        return ConsoleColors.RED+ ConsoleColors.BLACK_BACKGROUND + name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public String getTag() {
-        return tag;
-    }
-
-    public void setTag(String tag) {
-        this.tag = tag;
-    }
-
 }
